@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Number++ | Trịnh Khánh Sơn</title>
+    <meta name="description" content="Number++ - Cộng đồng chia sẻ thông tin về crypto và máy đào">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dust-grey: #dad7cd;
+            --dry-sage: #a3b18a;
+            --fern: #588157;
+            --hunter-green: #3a5a40;
+            --pine-teal: #344e41;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--dust-grey);
+            color: var(--pine-teal);
+            line-height: 1.6;
+            font-size: 14px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--pine-teal);
+            color: var(--dust-grey);
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        
+        .header p {
+            font-size: 12px;
+            color: var(--dry-sage);
+            margin-top: 6px;
+        }
+        
+        /* Main content */
+        .content {
+            background: #fff;
+            border: 2px solid var(--dry-sage);
+            border-top: none;
+            padding: 24px 20px;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        /* Warning box */
+        .warning-box {
+            background: rgba(163, 177, 138, 0.15);
+            border: 1px dashed var(--fern);
+            padding: 14px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        
+        .warning-box .title {
+            font-weight: 600;
+            color: var(--hunter-green);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .warning-box p {
+            color: var(--pine-teal);
+            line-height: 1.7;
+        }
+        
+        .warning-box .highlight {
+            background: var(--hunter-green);
+            color: #fff;
+            padding: 1px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        /* Buttons */
+        .btn-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 20px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid var(--dry-sage);
+            background: #fff;
+            color: var(--pine-teal);
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+        
+        .btn:hover {
+            background: var(--pine-teal);
+            color: #fff;
+            border-color: var(--pine-teal);
+        }
+        
+        .btn-primary {
+            background: var(--hunter-green);
+            color: #fff;
+            border-color: var(--hunter-green);
+        }
+        
+        .btn-primary:hover {
+            background: var(--pine-teal);
+            border-color: var(--pine-teal);
+        }
+        
+        .btn-secondary {
+            background: var(--dust-grey);
+            border-color: var(--dry-sage);
+            color: var(--pine-teal);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--fern);
+            color: #fff;
+            border-color: var(--fern);
+        }
+        
+        .btn svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: var(--fern);
+        }
+        
+        .footer span {
+            color: var(--pine-teal);
+            font-weight: 600;
+        }
+        
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: var(--dry-sage);
+            margin: 20px 0;
+        }
+        
+        /* Info text */
+        .info {
+            font-size: 12px;
+            color: var(--fern);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NUMBER++</h1>
+            <p>Crypto & Mining Community</p>
+        </div>
+        
+        <div class="content">
+            <!-- Warning for TikTok users -->
+            <div class="warning-box">
+                <div class="title">
+                    <span>⚠</span> Đang xem từ TikTok?
+                </div>
+                <p>
+                    Bấm <span class="highlight">⋯</span> góc phải màn hình
+                    → Chọn <span class="highlight">Mở bằng trình duyệt</span>
+                    để link Telegram hoạt động
+                </p>
+            </div>
+            
+            <div class="info">Chọn một liên kết bên dưới:</div>
+            
+            <div class="btn-list">
+                <a href="https://t.me/numb3rdp" class="btn btn-primary" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    Cộng đồng Number++
+                </a>
+
+                <a href="https://t.me/miningcaigibot" class="btn btn-secondary" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    Bot lợi nhuận máy đào
+                </a>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="footer">
+                by <span>Trịnh Khánh Sơn</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
